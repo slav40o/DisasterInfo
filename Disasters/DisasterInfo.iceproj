@@ -70,7 +70,9 @@
     <Content Include="kendo\typescript\kendo.mobile.d.ts" />
     <Content Include="scripts\app.js" />
     <Content Include="styles\main.css" />
-    <Content Include="views\add-report.html" />
+    <Content Include="views\about.html" />
+    <Content Include="views\add-alert.html" />
+    <Content Include="views\alert-info.html" />
     <Content Include="views\alerts.html" />
     <Content Include="views\home.html" />
     <Content Include="views\map.html" />

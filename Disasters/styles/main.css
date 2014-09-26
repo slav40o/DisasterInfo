@@ -1,1 +1,4 @@
-.km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
+.km-drawer-button:before, .km-drawer-button:after  {
+     content: "\E077";
+}
+
