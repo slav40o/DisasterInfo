@@ -9,11 +9,27 @@
     window.APP = {
       models: {
         home: {
-          title: 'Home'
+            title: 'Home'
         },
         settings: {
-          title: 'Settings'
+            title: 'Settings'
         },
+        about: {
+            title: 'About'
+        },
+        map: {
+            title: 'Map'
+        },
+        alerts: {
+            title: 'Alerts'
+        },
+        addAlert: {
+            title: 'Add Alert'
+        },
+        alertInfo: {
+            title: 'Alert Info'
+        },
+
         contacts: {
           title: 'Contacts',
           ds: new kendo.data.DataSource({
