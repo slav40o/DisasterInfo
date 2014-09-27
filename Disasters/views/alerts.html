@@ -1,10 +1,23 @@
 <div data-role="view" 
      data-title="Alerts List" 
-     data-layout="main" 
-     data-model="window.app.models.alerts">
+     data-layout="main"
+     data-model="app.alerts.viewModel">
 
     <h1 data-bind="html: title"></h1>
-    <ul data-role="listview" data-bind="source: alertsData">
+    <ul data-role="listview" 
+        data-bind="source: alertsDataSource"
+        data-template="alertsListTemplate">
         
     </ul>
 </div>
+
+<script type="text/x-kendo-tmpl" id="alertsListTemplate">
+    <div>
+        <span class="exercise-name">${type}</span>
+        <a class="position-right button" href="views/alert-info.html?uid=${id}" data-role="button">Details</a>
+    </div>
+</script>
+
+
+        <!--<span class="alert-name">${name}</span>
+        <a class="position-right button" data-role="button">Details</a>-->
