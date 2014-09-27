@@ -38,7 +38,7 @@
     <Content Include="images\disaster-icons\wind.png" />
     <Content Include="images\flood.jpg" />
     <Content Include="images\heat-wave.jpg" />
-    <Content Include="images\strom.jpg" />
+    <Content Include="images\storm.jpg" />
     <Content Include="images\wildfire.jpg" />
     <Content Include="images\zombie-attack.jpg" />
     <Content Include="index.html" />

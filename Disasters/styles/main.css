@@ -24,3 +24,44 @@
     background-image:url(../styles/images/location_active.png);
     background-repeat:no-repeat;
 }
+
+#alert-image
+{
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom:10px;
+    margin-left:5px;
+}
+
+#alert-info-container
+{
+    margin-left:7px;
+}
+
+th
+{
+    border-right:1px solid gray;
+    font-size: 17px;
+}
+
+.alerts-table
+{
+    border-spacing: 10px;
+    border-collapse:collapse;
+}
+
+tr
+{
+    padding-bottom:40px;
+    margin-bottom: 10px;
+}
+
+td
+{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family:'Browallia New';
+}

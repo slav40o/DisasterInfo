@@ -2,7 +2,7 @@
     {
         "id": 1,
         "type": "Heat wave",
-        "info": "A period of abnormally and uncomfortably hot and usually humid weather.To be a heat wave such a period should last at least one day, but conventionally it lasts from several days to several weeks. In 1900, A. T. Burrows more rigidly defined a “hot wave” as a spell of three or more days on each of which the maximum shade temperature reaches or exceeds 90 °F (32.2 °C). More realistically, the comfort criteria for any one region are dependent upon the normal conditions of that region.",
+        "info": "A period of abnormally and uncomfortably hot and usually humid weather.To be a heat wave such a period should last at least one day, but conventionally it lasts from several days to several weeks. In 1900, A. T. Burrows more rigidly defined a \"hot wave\" as a spell of three or more days on each of which the maximum shade temperature reaches or exceeds 90 F degrees (32.2 C degrees). More realistically, the comfort criteria for any one region are dependent upon the normal conditions of that region.",
         "lat": "55.7",
         "long": "-3.2",
         "area": "500km",

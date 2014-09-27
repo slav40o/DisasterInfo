@@ -7,9 +7,9 @@
         alertsDataSource: null,
         init: function () {
             var that = this;
-            
+
             kendo.data.ObservableObject.fn.init.apply(that, []);
-            
+
             var dataSource = new kendo.data.DataSource({
                 transport: {
                     read: {
@@ -21,7 +21,7 @@
 
             that.set("alertsDataSource", app.data);
         },
-        showDetail: function (e) {
+        showDetails: function (e) {
             var that = new AlertViewModel();
 
             var data = that.get("alertsDataSource");
@@ -33,8 +33,6 @@
             });
         },
     });
-
-    //TO DO: Set the model view to the app obejct!!!
 
     app.alerts = {
         viewModel: new AlertViewModel()
