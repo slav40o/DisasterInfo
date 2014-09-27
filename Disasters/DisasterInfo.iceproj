@@ -70,6 +70,7 @@
     <Content Include="kendo\typescript\jquery.d.ts" />
     <Content Include="kendo\typescript\kendo.mobile.d.ts" />
     <Content Include="scripts\app.js" />
+    <Content Include="scripts\data.js" />
     <Content Include="scripts\views\add-alert.js" />
     <Content Include="scripts\views\alert-datails.js" />
     <Content Include="scripts\views\alerts.js" />

@@ -1,8 +1,11 @@
 <div data-role="view"
      data-title="Map"
      data-layout="main"
-     data-model="window.app.models.map"
-     data-init="window.app.models.initMap">
+     data-init="app.locationService.initLocation"
+     data-show="app.locationService.show"
+     data-hide="app.locationService.hide"
+     data-model="app.locationService.viewModel"
+     data-stretch="true">
 
     <h1 data-bind="html: title"></h1>
     <div id="map-canvas"></div>
