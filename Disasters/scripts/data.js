@@ -13,6 +13,5 @@
         }
     });
 
-    //TO DO: Set the model view to the app obejct!!!
 
 })(window);

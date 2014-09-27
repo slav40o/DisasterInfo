@@ -9,11 +9,48 @@
         _isLoading: false,
         location: null,
         markers: [],
+        
+        loadMarkers: function () {
+            var dataSource = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "data/alerts.json",
+                        dataType: "json"
+                    }
+                }
+            });
 
-        loadMarkers: function(){
-            var alerts = app.data.fetch(
-                function () {
-                    // TO DO get coords and add marker
+            var alerts = dataSource.fetch(
+                function (data) {
+                    console.log(data.items);
+                    var items = data.items;
+
+                    for (var i = 0; i < items.length; i++) {
+                        if (!(items[i].isActive)) {
+                            continue;
+                        }
+                        
+                        var image,
+                            position;
+
+                        image = defineImage(items[i].type);
+                        position = new google.maps.LatLng(items[i].lat, items[i].long);
+                        titie = items[i].type;
+
+                        var marker = new google.maps.Marker({
+                            map: map,
+                            animation: google.maps.Animation.DROP,
+                            position: position,
+                            icon: image
+                        });
+                    }
+
+                    function defineImage(type) {
+                        switch (type) {
+                            case 'Storm': return 'images/disaster-icons/wind.png';
+                            default: return 'images/disaster-icons/meteor.png';
+                        }
+                    }
                 }
             );
         },
