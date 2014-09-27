@@ -12,7 +12,7 @@
     {
         "id": 2,
         "type": "Flood",
-        "info": "A flood is an overflow of water that submerges land which is usually dry. The European Union (EU) Floods Directive defines a flood as a covering by water of land not normally covered by water. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Flooding may occur as an overflow of water from water bodies, such as a river or lake, in which the water overtops or breaks levees, resulting in some of that water escaping its usual boundaries, or it may occur due to an accumulation of rainwater on saturated ground in an areal flood. While the size of a lake or other body of water will vary with seasonal changes in precipitation and snow melt, these changes in size are unlikely to be considered significant unless they flood property or drown domestic animals.",
+        "info": "A flood is an overflow of water that submerges land which is usually dry. The European Union (EU) Floods Directive defines a flood as a covering by water of land not normally covered by water. In the sense of \"flowing water\", the word may also be applied to the inflow of the tide. Flooding may occur as an overflow of water from water bodies, such as a river or lake, in which the water overtops or breaks levees, resulting in some of that water escaping its usual boundaries, or it may occur due to an accumulation of rainwater on saturated ground in an areal flood. While the size of a lake or other body of water will vary with seasonal changes in precipitation and snow melt, these changes in size are unlikely to be considered significant unless they flood property or drown domestic animals.",
         "lat": "43.2",
         "long": "27.9",
         "area": "5km",
@@ -36,7 +36,7 @@
         "lat": "34.9",
         "long": "133.7",
         "area": "600km",
-        "imagePath": images/storm.jpg"",
+        "imagePath": "images/storm.jpg",
         "isActive" :  true
     },
     {

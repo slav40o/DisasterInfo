@@ -7,9 +7,9 @@
         alertsDataSource: null,
         init: function () {
             var that = this;
-
+            
             kendo.data.ObservableObject.fn.init.apply(that, []);
-
+            
             var dataSource = new kendo.data.DataSource({
                 transport: {
                     read: {
@@ -19,14 +19,14 @@
                 }
             });
 
-            that.set("alertsDataSource", dataSource);
+            that.set("alertsDataSource", app.data);
         },
         showDetail: function (e) {
             var that = new AlertViewModel();
 
             var data = that.get("alertsDataSource");
 
-            data.fetch(function () {
+            app.data.fetch(function () {
                 var id = e.view.params.uid;
                 var model = data.at(parseInt(id) - 1);
                 kendo.bind(e.view.element, model, kendo.mobile.ui);
