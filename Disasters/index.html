@@ -9,10 +9,14 @@
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCG4jUolof0jhqQu0j1aNqSWfW_ms-wRKg&sensor=true"></script>
-
+    
+    <script src="scripts/views/add-alert.js"></script>
+    <script src="scripts/views/alert-datails.js"></script>
+    <script src="scripts/views/alerts.js"></script>
+    <script src="scripts/views/map.js"></script>
     <script src="scripts/app.js"></script>
-
 </head>
 <body>
  
@@ -58,6 +62,14 @@
             <a href="#">Exit</a>
         </li>
     </ul>
+
+      <!-- Templates-->
+      <script type="text/x-kendo-template"
+              id="disaster-item-template">
+          <div>
+              #: disaster.type #
+          </div>
+      </script>
   </div>    
 </body>
 </html>

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "type": "Heat wave",
+        "info": "",
+        "lat": "",
+        "long": "",
+        "area": "",
+        "info": ""
+    },
+    {
+        "id": 2,
+        "type": "Flood",
+        "info": "",
+        "lat": "",
+        "long": "",
+        "area": "",
+        "info": ""
+    },
+    {
+        "id": 3,
+        "type": "Fire",
+        "info": "",
+        "lat": "",
+        "long": "",
+        "area": "",
+        "info": ""
+    },
+    {
+        "id": 4,
+        "type": "Storm",
+        "info": "",
+        "lat": "",
+        "long": "",
+        "area": "",
+        "infoPath": ""
+    },
+    {
+        "id": 5,
+        "type": "Alien Invasion",
+        "info": "",
+        "lat": "",
+        "long": "",
+        "area": "",
+        "infoPath": ""
+    },
+    {
+        "id": 6,
+        "type": "Zombie Attack",
+        "info": "",
+        "lat": "",
+        "long": "",
+        "area": "",
+        "infoPath": ""
+    }
+]

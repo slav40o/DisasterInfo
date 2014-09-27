@@ -1,3 +1,9 @@
-<div data-role="view" data-title="Map" data-layout="main" data-model="APP.models.map">
+<div data-role="view"
+     data-title="Map"
+     data-layout="main"
+     data-model="window.app.models.map"
+     data-init="window.app.models.initMap">
+
     <h1 data-bind="html: title"></h1>
+    <div id="map-canvas"></div>
 </div>
