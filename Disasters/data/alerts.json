@@ -6,7 +6,9 @@
         "lat": "",
         "long": "",
         "area": "",
-        "info": ""
+        "info": "",
+        "imagePath": "",
+        "isActive" :  true
     },
     {
         "id": 2,
@@ -15,7 +17,9 @@
         "lat": "",
         "long": "",
         "area": "",
-        "info": ""
+        "info": "",
+        "imagePath": "",
+        "isActive" :  true
     },
     {
         "id": 3,
@@ -24,7 +28,9 @@
         "lat": "",
         "long": "",
         "area": "",
-        "info": ""
+        "info": "",
+        "imagePath": "",
+        "isActive" :  true
     },
     {
         "id": 4,
@@ -33,7 +39,9 @@
         "lat": "",
         "long": "",
         "area": "",
-        "infoPath": ""
+        "infoPath": "",
+        "imagePath": "",
+        "isActive" :  true
     },
     {
         "id": 5,
@@ -42,7 +50,9 @@
         "lat": "",
         "long": "",
         "area": "",
-        "infoPath": ""
+        "infoPath": "",
+        "imagePath": "",
+        "isActive" :  true
     },
     {
         "id": 6,
@@ -51,6 +61,8 @@
         "lat": "",
         "long": "",
         "area": "",
-        "infoPath": ""
+        "infoPath": "",
+        "imagePath": "",
+        "isActive" :  true
     }
 ]
