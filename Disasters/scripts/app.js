@@ -15,6 +15,15 @@
             initial: 'views/home.html'
         });
 
+        app.data = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "data/alerts.json",
+                    dataType: "json"
+                }
+            }
+        });
+
     }, false);
 
 }(window));
