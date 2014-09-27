@@ -24,7 +24,6 @@
             initial: 'views/home.html'
         });
 
-        
     }, false);
 
 }(window));

@@ -10,12 +10,45 @@
         location: null,
         markers: [],
 
-        loadMarkers: function(markersPositions){
-
+        loadMarkers: function(){
+            var alerts = app.data.fetch(
+                function () {
+                    // TO DO get coords and add marker
+                }
+            );
         },
 
         navigateHome: function(){
+            var that = this,
+                position;
 
+            that._isLoading = true;
+            that.showLoading();
+
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    position = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                    map.panTo(position);
+                    that._putMarker(position);
+
+                    that._isLoading = false;
+                    that.hideLoading();
+                },
+                function (error) {                    
+                    position = new google.maps.LatLng(43.459336, -80.462494);
+                    map.panTo(position);
+
+                    that._isLoading = false;
+                    that.hideLoading();
+
+                    navigator.notification.alert("Unable to determine current location. Cannot connect to GPS satellite.",
+                        function () { }, "Location failed", 'OK');
+                },
+                {
+                    timeout: 30000,
+                    enableHighAccuracy: true
+                }
+            );
         },
 
         showLoading: function () {
@@ -52,9 +85,10 @@
                 streetViewControl: false
             };
 
+            var data = 
             map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
             app.locationService.viewModel.loadMarkers.apply(app.locationService.viewModel, []);
-            app.locationService.viewModel.onNavigateHome.apply(app.locationService.viewModel, []);
+            app.locationService.viewModel.navigateHome.apply(app.locationService.viewModel, []);
         },
 
         show: function () {
