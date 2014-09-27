@@ -29,7 +29,6 @@
                 function (position) {
                     position = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                     map.panTo(position);
-                    that._putMarker(position);
 
                     that._isLoading = false;
                     that.hideLoading();
@@ -71,10 +70,10 @@
         }
     });
 
-    app.locationService = {
-        initLocation: function () {
+    app.mapService = {
+        initMap: function () {
             var mapOptions = {
-                zoom: 15,
+                zoom: 11,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 zoomControl: true,
                 zoomControlOptions: {
@@ -85,16 +84,16 @@
                 streetViewControl: false
             };
 
-            var data = 
+            // var data = 
             map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-            app.locationService.viewModel.loadMarkers.apply(app.locationService.viewModel, []);
-            app.locationService.viewModel.navigateHome.apply(app.locationService.viewModel, []);
+            app.mapService.viewModel.loadMarkers.apply(app.mapService.viewModel, []);
+            app.mapService.viewModel.navigateHome.apply(app.mapService.viewModel, []);
         },
 
         show: function () {
             //show loading mask in case the location is not loaded yet 
             //and the user returns to the same tab
-            app.locationService.viewModel.showLoading();
+            app.mapService.viewModel.showLoading();
 
             //resize the map in case the orientation has been changed while showing other tab
             google.maps.event.trigger(map, "resize");
@@ -102,9 +101,9 @@
 
         hide: function () {
             //hide loading mask if user changed the tab as it is only relevant to location tab
-            app.locationService.viewModel.hideLoading();
+            app.mapService.viewModel.hideLoading();
         },
 
-        viewModel: new LocationViewModel()
+        viewModel: new MapViewModel()
     };
 })(window);

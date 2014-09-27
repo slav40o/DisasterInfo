@@ -75,6 +75,12 @@
     <Content Include="scripts\views\alert-datails.js" />
     <Content Include="scripts\views\alerts.js" />
     <Content Include="scripts\views\map.js" />
+    <Content Include="styles\images\icenium.png" />
+    <Content Include="styles\images\icenium2x.png" />
+    <Content Include="styles\images\location.png" />
+    <Content Include="styles\images\location2x.png" />
+    <Content Include="styles\images\location_active.png" />
+    <Content Include="styles\images\location_active2x.png" />
     <Content Include="styles\main.css" />
     <Content Include="views\about.html" />
     <Content Include="views\add-alert.html" />
@@ -105,6 +111,7 @@
     <Folder Include="scripts\" />
     <Folder Include="scripts\views\" />
     <Folder Include="styles\" />
+    <Folder Include="styles\images\" />
     <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(IceniumTargets)Build.targets" />

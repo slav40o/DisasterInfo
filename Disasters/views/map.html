@@ -1,12 +1,12 @@
 <div data-role="view"
      data-title="Map"
      data-layout="main"
-     data-init="app.locationService.initLocation"
-     data-show="app.locationService.show"
-     data-hide="app.locationService.hide"
-     data-model="app.locationService.viewModel"
+     data-init="app.mapService.initMap"
+     data-show="app.mapService.show"
+     data-hide="app.mapService.hide"
+     data-model="app.mapService.viewModel"
      data-stretch="true">
-
-    <h1 data-bind="html: title"></h1>
+    
     <div id="map-canvas"></div>
+    <button id="map-navigate-home" data-bind="click: navigateHome">Home</button>
 </div>
