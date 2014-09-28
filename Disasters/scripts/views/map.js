@@ -121,7 +121,6 @@
                 streetViewControl: false
             };
 
-            // var data = 
             map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
             app.mapService.viewModel.loadMarkers.apply(app.mapService.viewModel, []);
             app.mapService.viewModel.navigateHome.apply(app.mapService.viewModel, []);
