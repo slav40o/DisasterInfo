@@ -5,7 +5,7 @@
         "info": "A period of abnormally and uncomfortably hot and usually humid weather.To be a heat wave such a period should last at least one day, but conventionally it lasts from several days to several weeks. In 1900, A. T. Burrows more rigidly defined a \"hot wave\" as a spell of three or more days on each of which the maximum shade temperature reaches or exceeds 90 F degrees (32.2 C degrees). More realistically, the comfort criteria for any one region are dependent upon the normal conditions of that region.",
         "lat": "55.7",
         "long": "-3.2",
-        "area": "500km",
+        "area": 500,
         "imagePath": "images/heat-wave.jpg",
         "isActive" :  true
     },
@@ -15,7 +15,7 @@
         "info": "A flood is an overflow of water that submerges land which is usually dry. The European Union (EU) Floods Directive defines a flood as a covering by water of land not normally covered by water. In the sense of \"flowing water\", the word may also be applied to the inflow of the tide. Flooding may occur as an overflow of water from water bodies, such as a river or lake, in which the water overtops or breaks levees, resulting in some of that water escaping its usual boundaries, or it may occur due to an accumulation of rainwater on saturated ground in an areal flood. While the size of a lake or other body of water will vary with seasonal changes in precipitation and snow melt, these changes in size are unlikely to be considered significant unless they flood property or drown domestic animals.",
         "lat": "43.2",
         "long": "27.9",
-        "area": "5km",
+        "area": 50,
         "imagePath": "images/flood.jpg",
         "isActive" :  true
     },
@@ -25,7 +25,7 @@
         "info": "A wildfire is an uncontrolled fire in an area of combustible vegetation that occurs in the countryside or a wilderness area. A wildfire differs from other fires by its extensive size, the speed at which it can spread out from its original source, its potential to change direction unexpectedly, and its ability to jump gaps such as roads, rivers and fire breaks. Wildfires are characterized in terms of the cause of ignition, their physical properties such as speed of propagation, the combustible material present, and the effect of weather on the fire.",
         "lat": "32.4",
         "long": "-116.6",
-        "area": "25km",
+        "area": 25,
         "imagePath": "images/wildfire.jpg",
         "isActive" :  true
     },
@@ -35,7 +35,7 @@
         "info": "A storm is any disturbed state of an environment or astronomical body's atmosphere especially affecting its surface, and strongly implying severe weather. It may be marked by significant disruptions to normal conditions such as strong wind, hail, thunder and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc.",
         "lat": "34.9",
         "long": "133.7",
-        "area": "600km",
+        "area": 600,
         "imagePath": "images/storm.jpg",
         "isActive" :  true
     },
@@ -45,7 +45,7 @@
         "info": "During the invasion, aliens contacting Earth tend to either observe (sometimes using experiments) or invade, rather than help the population of Earth acquire the capacity to participate in interplanetary affairs. There have been a few exceptions, such as the alien-initiated first contact",
         "lat": "42.5",
         "long": "-73.6",
-        "area": "10km",
+        "area": 20,
         "imagePath": "images/alien-invasion.jpg",
         "isActive" :  true
     },
@@ -54,8 +54,8 @@
         "type": "Zombie Attack",
         "info": "Invasion of zombies that try to destroy or conquer the planet Earth, transforming all of the people into zombies, who serve them.",
         "lat": "-4.5",
-        "long": "143.5",
-        "area": "3km",
+        "long": 143,
+        "area": 35,
         "imagePath": "images/zombie-attack.jpg",
         "isActive" :  true
     }

@@ -43,12 +43,56 @@
                             position: position,
                             icon: image
                         });
+
+                        var circleOptions = {
+                            strokeColor: defineColor(items[i].type),
+                            strokeOpacity: 0.8,
+                            strokeWeight: 2,
+                            map: map,
+                            center: position,
+                            radius: items[i].area * 1000
+                        };
+
+                        circle = new google.maps.Circle(circleOptions);
                     }
 
                     function defineImage(type) {
                         switch (type) {
-                            case 'Storm': return 'images/disaster-icons/wind.png';
+                            case 'Storm': return 'images/disaster-icons/storm.png';
+                            case 'Zombie Attack': return 'images/disaster-icons/zombie-attack.png';
+                            case 'Alien Invasion': return 'images/disaster-icons/alien-invasion.png';
+                            case 'Fire': return 'images/disaster-icons/fire.png';
+                            case 'Flood': return 'images/disaster-icons/flood.png';
+                            case 'Heat wave': return 'images/disaster-icons/heat.png';
+                            case 'Cold': return 'images/disaster-icons/cold.png';
+                            case 'Earthquake': return 'images/disaster-icons/earthquake.png';
+                            case 'Meteor': return 'images/disaster-icons/meteor.png';
+                            case 'Snow storm': return 'images/disaster-icons/snow-storm.png';
+                            case 'Thunder storm': return 'images/disaster-icons/thinder-storm.png';
+                            case 'Tornado': return 'images/disaster-icons/tornado.png';
+                            case 'War': return 'images/disaster-icons/war.png';
+                            case 'Eruption': return 'images/disaster-icons/eruption.png';
                             default: return 'images/disaster-icons/meteor.png';
+                        }
+                    }
+
+                    function defineColor(type) {
+                        switch (type) {
+                            case 'Storm': return '#020f7f';
+                            case 'Zombie Attack': return '#7f351a';
+                            case 'Alien Invasion': return '#006307';
+                            case 'Fire': return '#e52200';
+                            case 'Flood': return '#60a8ff';
+                            case 'Heat wave': return '#ffba60';
+                            case 'Cold': return '#60fff4';
+                            case 'Earthquake': return '#ffca60';
+                            case 'Meteor': return '#0f0000';
+                            case 'Snow storm': return '#ffffff';
+                            case 'Thunder storm': return '#12009b';
+                            case 'Tornado': return '#12009b';
+                            case 'War': return '#b20000';
+                            case 'Eruption': return '#ff5a07';
+                            default: return '#020f7f';
                         }
                     }
                 }
@@ -111,6 +155,7 @@
         initMap: function () {
             var mapOptions = {
                 zoom: 11,
+                // minZoom: 6,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 zoomControl: true,
                 zoomControlOptions: {
