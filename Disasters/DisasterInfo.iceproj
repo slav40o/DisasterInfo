@@ -42,6 +42,7 @@
     <Content Include="images\wildfire.jpg" />
     <Content Include="images\zombie-attack.jpg" />
     <Content Include="index.html" />
+    <Content Include="views\your-pics.html" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
@@ -87,6 +88,7 @@
     <Content Include="scripts\views\add-alert.js" />
     <Content Include="scripts\views\alert-datails.js" />
     <Content Include="scripts\views\alerts.js" />
+    <Content Include="scripts\views\camera.js" />
     <Content Include="scripts\views\home.js" />
     <Content Include="scripts\views\map.js" />
     <Content Include="styles\images\icenium.png" />
