@@ -43,6 +43,7 @@
     <Content Include="images\wildfire.jpg" />
     <Content Include="images\zombie-attack.jpg" />
     <Content Include="index.html" />
+    <Content Include="scripts\music.js" />
     <Content Include="views\your-pics.html" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
