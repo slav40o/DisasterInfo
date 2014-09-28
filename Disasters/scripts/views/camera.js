@@ -6,12 +6,33 @@
     var PicturesViewModel = kendo.data.ObservableObject.extend({
         title: 'Pictures',
 
+        //init: function () {
+        //    var that = this;
+        //    kendo.data.ObservableObject.fn.init.apply(that, []);
+        //    that.loadAllPictures();
+        //},
+
         takePicture: function () {
             navigator.camera.getPicture(function (imageData) {
                 var image = document.getElementById('imageInput');
                 image.src = "data:image/jpeg;base64," + imageData;
                 console.dir(imageData);
-                localStorage.setItem("img1.jpg", image.value);
+
+                //save into localStorage
+                var name = "img" + Math.floor((Math.random() * 10000) + 1);
+                localStorage.setItem(name, imageData);
+
+                //update the list with pictures
+                var gallery = document.getElementById('gallery');
+                var img = document.createElement("img");
+                img.src = "data:image/jpeg;base64," + localStorage.getItem(name);
+                img.width = 200;
+                img.height = 150;
+                var li = document.createElement("li");
+                li.appendChild(img);
+                gallery.appendChild(li);
+
+                console.dir(localStorage);
             }, function (message) {
                 alert('Failed because: ' + message);
             }, {
@@ -19,44 +40,26 @@
                 destinationType: Camera.DestinationType.DATA_URL
             })
         },
+        loadAllPictures: function () {
+            var gallery = document.getElementById('gallery');
+            var counter = 1;
+            //while (localStorage.getItem("img" + counter) != undefined) {
+            for (var i = 0; i < 10000; i++) {
+                if (localStorage.getItem("img" + i) != null) {
+                    var img = document.createElement("img");
+                    img.src = "data:image/jpeg;base64," + localStorage.getItem("img" + i);
+                    img.width = 300;
+                    img.height = 200;
+                    var li = document.createElement("li");
+                    li.appendChild(img);
+                    gallery.appendChild(li);
+                    //gallery.appendChild(document.createElement("li").appendChild(document.createElement("img").src
+                    //counter++;
+                }
+            }
+        },
     });
     app.pictures = {
         model: new PicturesViewModel()
     }
 })(window);
-
-//localStorageApp.prototype = {
-//	run:function() {
-//		var that = this;
-//		document.getElementById("savePicture").addEventListener("click", function() {
-//			that._insertVariable.apply(that, arguments);
-//		});
-//	},
-
-
-//	_insertVariable: function () {
-//	    navigator.camera.getPicture(onSuccess, onFail, {
-//	        quality: 50,
-//	        destinationType: Camera.DestinationType.DATA_URL
-//	    });
-
-//		var variableNameInput = document.getElementById("pictureNameInput"),
-//		valueInput = document.getElementById("imageInput");
-
-//		localStorage.setItem(variableNameInput.value, valueInput.value);
-//		variableNameInput.value = "";
-//		valueInput.value = "";
-
-//		function onSuccess(imageData) {
-//		    var image = document.getElementById('imageInput');
-//		    image.src = "data:image/jpeg;base64," + imageData;
-//		    console.dir(imageData);
-//		}
-
-//		function onFail(message) {
-//		    alert('Failed because: ' + message);
-//		}
-//	}
-//}
-
-//localStorageApp.run();

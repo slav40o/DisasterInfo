@@ -3,11 +3,14 @@
      data-layout="main" 
      data-model="window.app.pictures.model">
 
-    <h1 data-bind="html: title"></h1>
+   <!-- <h1 data-bind="html: title"></h1>-->
 
     <button data-role="button"
         data-click="window.app.pictures.model.takePicture"
-        id="capture-button">Capture
+        id="capture-button">Capture new picture
     </button>
-    <img id="imageInput" width="200" height="150"/>
+    <img id="imageInput" width="200" height="150" style="display:none"/>
+
+    <ul id="gallery" data-role="listview" data-bind="source: loadAllPictures">
+    </ul>
 </div>
