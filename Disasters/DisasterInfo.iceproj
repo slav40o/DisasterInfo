@@ -87,6 +87,7 @@
     <Content Include="scripts\views\add-alert.js" />
     <Content Include="scripts\views\alert-datails.js" />
     <Content Include="scripts\views\alerts.js" />
+    <Content Include="scripts\views\home.js" />
     <Content Include="scripts\views\map.js" />
     <Content Include="styles\images\icenium.png" />
     <Content Include="styles\images\icenium2x.png" />

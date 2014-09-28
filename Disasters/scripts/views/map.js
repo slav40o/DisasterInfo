@@ -8,7 +8,6 @@
     MapViewModel = kendo.data.ObservableObject.extend({
         _isLoading: false,
         location: null,
-        markers: [],
         
         loadMarkers: function () {
             var dataSource = new kendo.data.DataSource({
@@ -22,7 +21,6 @@
 
             var alerts = dataSource.fetch(
                 function (data) {
-                    console.log(data.items);
                     var items = data.items;
 
                     for (var i = 0; i < items.length; i++) {

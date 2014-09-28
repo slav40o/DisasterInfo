@@ -1,7 +1,10 @@
 <div data-role="view"
-      data-title="Disaster Info"
-      data-layout="main" 
-      data-model="window.app.models.home">
+     data-title="Disaster Info"
+     data-layout="main"
+     data-model="window.app.home.model"
+     >
 
-  <h1 data-bind="html: title"></h1>
+    <h1>Be aware about the dangers around you!</h1>
+
+    <button data-role="button" data-click="window.app.home.model.chechForAlerts">CHECK FOR DANGER</button>
 </div>
