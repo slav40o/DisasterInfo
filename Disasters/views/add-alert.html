@@ -4,4 +4,36 @@
      data-model="window.app.models.alertInfo">
 
     <h1 data-bind="html: title"></h1>
+
+    <span>Disaster's type:</span>
+    <input type="text" id="type" />
+    <div>
+        <span>Info:</span>
+        <input type="text" id="info" />
+    </div>
+    <div>
+        <span>Latitude:</span>
+        <input type="number" id="lat" />
+    </div>
+    <div>
+        <span>Longitude:</span>
+        <input type="number" id="long" />
+    </div>
+    <div>
+        <span>Area:</span>
+        <input type="number" id="area"/>
+    </div>
+    <div>
+        <span>Image path:</span>
+        <input type="file" id="imgPath" />
+    </div>
+    <div>
+        <span>Is active:</span>
+        <input type="checkbox" id="isActive" />
+    </div>
+
+    <button data-role="button"
+        data-click="window.app.addDisaster.model.addAlert"
+        id="capture-button">Add alert
+    </button>
 </div>
