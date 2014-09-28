@@ -26,8 +26,8 @@
                 var gallery = document.getElementById('gallery');
                 var img = document.createElement("img");
                 img.src = "data:image/jpeg;base64," + localStorage.getItem(name);
-                img.width = 200;
-                img.height = 150;
+                img.width = 300;
+                img.height = 200;
                 var li = document.createElement("li");
                 li.appendChild(img);
                 gallery.appendChild(li);
