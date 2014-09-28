@@ -5,9 +5,8 @@
 
     var HomeViewModel = kendo.data.ObservableObject.extend({
         title: 'Home',
-        isInDanger: null,
 
-        chechForAlerts: function () {
+        checkForAlerts: function () {
             var that = this,
                 dataSource = new kendo.data.DataSource({
                     transport: {
@@ -44,7 +43,7 @@
                             else {
                                 var message = (count == 1) ? " Danger spot around you!" : " Danger spots around you!";
                                 navigator.notification.alert(count + message,
-                                     function () {  }, "Dangers check", 'OK');
+                                     function () { }, "Dangers check", 'OK');
                             }
                         }
                     );
@@ -76,10 +75,6 @@
     });
 
     app.home = {
-        init: function () {
-            app.home.model.isInDanger = app.home.model.chechForAlerts.apply(app.home.model, []);
-        },
-
         model: new HomeViewModel()
     }
 

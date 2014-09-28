@@ -139,6 +139,11 @@
             app.kendoApp.hideLoading();
         },
 
+        zoomMap: function(change){
+            var currentZoom = map.getZoom();
+            map.setZoom(currentZoom + change);
+        },
+
         _putMarker: function (position) {
             var that = this;
 
@@ -167,6 +172,17 @@
             map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
             app.mapService.viewModel.loadMarkers.apply(app.mapService.viewModel, []);
             app.mapService.viewModel.navigateHome.apply(app.mapService.viewModel, []);
+
+            document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
+            document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
+
+            function onVolumeUpKeyDown() {
+                app.mapService.viewModel.zoomMap.apply(app.mapService.viewModel, [1]);
+            }
+
+            function onVolumeDownKeyDown() {
+                app.mapService.viewModel.zoomMap.apply(app.mapService.viewModel, [-1]);
+            }
         },
 
         show: function () {
