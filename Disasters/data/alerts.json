@@ -58,5 +58,15 @@
         "area": 35,
         "imagePath": "images/zombie-attack.jpg",
         "isActive" :  true
-    }
+    },
+	{
+		"id": 7,
+		"type": "Earthquake",
+		"info": "Earthquakes, also called temblors, can be so tremendously destructive, it's hard to imagine they occur by the thousands every day around the world, usually in the form of small tremors. Some 80 percent of all the planet's earthquakes occur along the rim of the Pacific Ocean, called the \"Ring of Fire\" because of the preponderance of volcanic activity there as well. Most earthquakes occur at fault zones, where tectonic plates-giant rock slabs that make up the Earth's upper layer-collide or slide against each other.",
+		"lat": "46.04",
+		"long": "10.5",
+		"area": 100,
+		"imagePath": "images/earthquake.jpg",
+		"isActive": true
+	}
 ]

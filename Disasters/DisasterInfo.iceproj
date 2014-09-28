@@ -36,6 +36,7 @@
     <Content Include="images\disaster-icons\tsunami.png" />
     <Content Include="images\disaster-icons\volcano.png" />
     <Content Include="images\disaster-icons\wind.png" />
+    <Content Include="images\earthquake.jpg" />
     <Content Include="images\flood.jpg" />
     <Content Include="images\heat-wave.jpg" />
     <Content Include="images\storm.jpg" />
