@@ -37,13 +37,14 @@
   </div>
 
   <!-- application drawer and contents -->
-  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Menu">
+  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Menu"
+       data-swipe-to-open="false">
     <div data-role="header">
       <div data-role="navbar">
         <span data-role="view-title"></span>
       </div>
     </div>
-    <ul data-role="listview">
+    <ul data-role="listview" id="main-menu">
         <li>
           <a href="views/home.html">Home</a>
         </li>
@@ -65,18 +66,7 @@
         <li>
             <a href="views/about.html">About</a>
         </li>
-        <li>
-            <a href="#">Exit</a>
-        </li>
     </ul>
-
-      <!-- Templates-->
-      <script type="text/x-kendo-template"
-              id="disaster-item-template">
-          <div>
-              #: disaster.type #
-          </div>
-      </script>
   </div>    
 </body>
 </html>

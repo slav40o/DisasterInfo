@@ -2,14 +2,20 @@
      data-title="Disaster Info"
      data-layout="main"
      data-model="window.app.home.model"
-     >
+     id="home-view">
 
-    <h1>Be aware about the dangers around you!</h1>
-
-    <button data-role="button"
+    <button class="check-btn" data-role="button"
             data-click="window.app.home.model.checkForAlerts">
-        CHECK FOR DANGER
+        CHECK FOR DISASTER
     </button>
+    <div class="image-container">
+        <img class="left-img" src="images/disaster-icons/flood.png"/>
+        <img class="right-img" src="images/disaster-icons/tornado.png" />
+    </div>
+    <h1 class="logo">Be aware about the dangers around you!</h1>
 
-    
+    <div class="image-container">
+        <img class="left-img" src="images/disaster-icons/meteor.png" />
+        <img class="right-img" src="images/disaster-icons/eruption.png" />
+    </div>
 </div>
