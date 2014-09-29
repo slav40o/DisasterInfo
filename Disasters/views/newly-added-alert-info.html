@@ -1,0 +1,33 @@
+<div data-role="view" 
+     data-title="Alert Details" 
+     data-layout="main" 
+     data-show="app.addDisaster.model.showDetails">
+
+    <div id="alert-info-container">
+        <h1 class="center" data-bind="text: type"></h1>
+        <img data-bind="attr: { src: imagePath }" id="alert-image" />
+            <br />
+        <table class="alerts-table" >
+            <tr>
+                <th>Is active</th>
+                <td data-bind="text: isActive"></td>
+            </tr>
+            <tr>
+                <th>Info</th>
+                <td data-bind="text: info"></td>
+            </tr>
+            <tr>
+                <th>Latitude</th>
+                <td data-bind="text: lat"></td>
+            </tr>
+            <tr>
+                <th>Longitude</th>
+                <td data-bind="text: long"></td>
+            </tr>
+            <tr>
+                <th>Area</th>
+                <td data-bind="text: area"></td>
+            </tr>
+        </table>
+    </div>
+</div>
