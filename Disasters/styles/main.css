@@ -160,6 +160,7 @@ td
 
 #report-alert-view .alert-form{
     padding-right: 10%;
+    margin-top: 1.5em;
 }
 
 #report-alert-view .alert-form .form-item{
@@ -169,6 +170,16 @@ td
 #report-alert-view .alert-form .form-item span{
     font-size: 1.2em;
     font-weight: 700;
+}
+
+#report-alert-view .alert-form .form-item input{
+    height: 1.6em;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+#report-alert-view .alert-form .form-item .image-input{
+    font-size: 1em;
 }
 
 .alert-form #capture-button{
@@ -186,6 +197,7 @@ td
 /* Take Picture */
 #take-picture-button{
     position: absolute;
+    z-index: 100;
     top: 0;
     right: 0;
     color: white;

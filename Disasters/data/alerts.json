@@ -94,5 +94,17 @@
         "imagePath": "images/flood.jpg",
         "iconPath":  "images/disaster-icons/war.png",
         "isActive" :  true
+    },
+    {
+        "id": 9,
+        "type": "Snow storm",
+        "title": "aszxm,jkhdsfasfgh,",
+        "info": "",
+        "lat": "34.04",
+        "long": "35.9",
+        "area": 750,
+        "imagePath": "images/flood.jpg",
+        "iconPath":  "images/disaster-icons/snow-storm.png",
+        "isActive" :  true
     }
 ]

@@ -61,9 +61,9 @@
                 shootedByAnError = true;
             }
             var imagePathLength = document.getElementById('imgPath').value.length;
-            if (document.getElementById('imgPath').value.substring(imagePathLength - 3, imagePathLength) === "jpg" ||
-                document.getElementById('imgPath').value.substring(imagePathLength - 3, imagePathLength) === "png" ||
-                document.getElementById('imgPath').value.substring(imagePathLength - 4, imagePathLength) === "jpeg") {
+            if (document.getElementById('imgPath').value.substring(imagePathLength - 3, imagePathLength).toLowerCase() === "jpg" ||
+                document.getElementById('imgPath').value.substring(imagePathLength - 3, imagePathLength).toLowerCase() === "png" ||
+                document.getElementById('imgPath').value.substring(imagePathLength - 4, imagePathLength).toLowerCase() === "jpeg") {
                 disaster.imagePath = document.getElementById('imgPath').value;
                 if (!shootedByAnError) {
                     document.getElementById('imgPath').value = "";

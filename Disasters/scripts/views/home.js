@@ -10,19 +10,21 @@
             var that = this,
                 dataSource = app.dataInstance();
 
-            if (navigator.connection.type == 'unknown') {
-                navigator.notification.alert("No interner connection!",
-                                     function () { }, "Network error", 'OK');
-            }
+            if (navigator.connection.type == 'unknown' || 
+                navigator.connection.type == 'none') {
 
-            navigator.geolocation.getCurrentPosition(
+                navigator.notification.alert("No interner connection!", function () { }, "Network error", 'OK');
+            }
+            else {
+                navigator.geolocation.getCurrentPosition(
                 manageCoordinateds,
                 manageError,
                 {
                     timeout: 30000,
                     enableHighAccuracy: true
-                }
-            );
+                });
+            }
+            
 
             function manageError(error) {
                 navigator.notification.alert("Unable to determine current location. Cannot connect to GPS satellite.",
