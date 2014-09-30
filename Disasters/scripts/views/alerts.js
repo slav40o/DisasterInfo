@@ -5,22 +5,17 @@
 
     var AlertViewModel = kendo.data.ObservableObject.extend({
         alertsDataSource: null,
+
         init: function () {
             var that = this;
 
             kendo.data.ObservableObject.fn.init.apply(that, []);
 
-            var dataSource = new kendo.data.DataSource({
-                transport: {
-                    read: {
-                        url: "data/alerts.json",
-                        dataType: "json"
-                    }
-                }
-            });
+            var dataSource = app.dataInstance();
 
             that.set("alertsDataSource", app.data);
         },
+
         showDetails: function (e) {
             var that = new AlertViewModel();
 
@@ -37,9 +32,5 @@
     app.alerts = {
         viewModel: new AlertViewModel()
     };
-
-    //JUST FOR TEST
-    //app.models = {};
-    //app.models.alerts = { title: "Alerts"};
 
 })(window);

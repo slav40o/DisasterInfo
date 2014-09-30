@@ -8,15 +8,7 @@
 
         checkForAlerts: function () {
             var that = this,
-                dataSource = new kendo.data.DataSource({
-                    transport: {
-                        read: {
-                            url: "data/alerts.json",
-                            dataType: "json"
-                        }
-                    }
-                }
-            );
+                dataSource = app.dataInstance();
 
             if (navigator.connection.type == 'unknown') {
                 navigator.notification.alert("No interner connection!",
@@ -24,44 +16,48 @@
             }
 
             navigator.geolocation.getCurrentPosition(
-                function (position) {
-                    var currPos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                    dataSource.fetch(
-                        function (data) {
-                            var items = data.items;
-                            var count = 0;
-                            for (var i = 0; i < items.length; i++) {
-                                if (!(items[i].isActive)) {
-                                    continue;
-                                }
-
-                                var disatance = calclateDistance(currPos, new google.maps.LatLng(items[i].lat, items[i].long));
-                                if (disatance/1000 < items[i].area) {
-                                    count++;
-                                }
-                            }
-
-                            if (count < 1) {
-                                navigator.notification.alert("Everything is okay!",
-                                     function () { }, "Dangers check", 'OK');
-                            }
-                            else {
-                                var message = (count == 1) ? " Danger spot around you!" : " Danger spots around you!";
-                                navigator.notification.alert(count + message,
-                                     function () { }, "Dangers check", 'OK');
-                            }
-                        }
-                    );
-                },
-                function (error) {
-                    navigator.notification.alert("Unable to determine current location. Cannot connect to GPS satellite.",
-                        function () { }, "Location failed", 'OK');
-                },
+                manageCoordinateds,
+                manageError,
                 {
                     timeout: 30000,
                     enableHighAccuracy: true
                 }
             );
+
+            function manageError(error) {
+                navigator.notification.alert("Unable to determine current location. Cannot connect to GPS satellite.",
+                        function () { }, "Location failed", 'OK');
+            }
+
+            function manageCoordinateds(position) {
+                var currPos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                dataSource.fetch(
+                    function (data) {
+                        var items = data.items;
+                        var count = 0;
+                        for (var i = 0; i < items.length; i++) {
+                            if (!(items[i].isActive)) {
+                                continue;
+                            }
+
+                            var disatance = calclateDistance(currPos, new google.maps.LatLng(items[i].lat, items[i].long));
+                            if (disatance / 1000 < items[i].area) {
+                                count++;
+                            }
+                        }
+
+                        if (count < 1) {
+                            navigator.notification.alert("Everything is okay!",
+                                 function () { }, "Dangers check", 'OK');
+                        }
+                        else {
+                            var message = (count == 1) ? " Danger spot around you!" : " Danger spots around you!";
+                            navigator.notification.alert(count + message,
+                                 function () { }, "Dangers check", 'OK');
+                        }
+                    }
+                );
+            }
 
             function calclateDistance(position, disasterPos) {
                 var lat = [position.lat(), disasterPos.lat()]

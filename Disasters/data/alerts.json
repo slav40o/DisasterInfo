@@ -82,5 +82,17 @@
         "imagePath": "images/earthquake.jpg",
         "iconPath":  "images/disaster-icons/earthquake.png",
 		"isActive": true
-	}
+	},
+    {
+        "id": 8,
+        "type": "War",
+        "title": "Another war in the midles east",
+        "info": "The al-kayda separatist startet a rebelion in the north of Afganistan. There are 4000 casualties for now. The situation is out of control",
+        "lat": "26.04",
+        "long": "27.9",
+        "area": 50,
+        "imagePath": "images/flood.jpg",
+        "iconPath":  "images/disaster-icons/war.png",
+        "isActive" :  true
+    }
 ]
