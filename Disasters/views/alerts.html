@@ -1,7 +1,8 @@
 <div data-role="view" 
      data-title="Alerts List" 
      data-layout="main"
-     data-model="app.data">
+     data-model="app.data"
+     id="alerts-list-view">
 
     <ul data-role="listview" 
         data-bind="source: alertsDataSource"
@@ -11,13 +12,11 @@
 </div>
 
 <script type="text/x-kendo-tmpl" id="alertsListTemplate">
-    <div>
-        # console.log('shit') #
-        <span class="alert-name">${type}</span>
-        <a class="position-right button" href="views/alert-info.html?uid=${id}" data-role="button">Details</a>
+    <div class="alert-details">
+        <img class="icon" src="${iconPath}"/>
+        <div class="title-container">
+            <h3 class="title">${title}</h3>
+            <a class="more-btn" href="views/alert-info.html?uid=${id}" data-role="button">More info</a>
+        </div>
     </div>
 </script>
-
-
-        <!--<span class="alert-name">${name}</span>
-        <a class="position-right button" data-role="button">Details</a>-->

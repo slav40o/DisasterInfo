@@ -29,13 +29,46 @@
     <Content Include="cordova.wp8.js" />
     <Content Include="data\alerts.json" />
     <Content Include="images\alien-invasion.jpg" />
-    <Content Include="images\disaster-icons\icons.jpg" />
+    <Content Include="images\disaster-icons\alien-invasion.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\cold.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\earthquake.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\eruption.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\fire.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\flood.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\heat.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="images\disaster-icons\meteor.png" />
-    <Content Include="images\disaster-icons\Thumbs.db" />
-    <Content Include="images\disaster-icons\thunder.png" />
-    <Content Include="images\disaster-icons\tsunami.png" />
-    <Content Include="images\disaster-icons\volcano.png" />
-    <Content Include="images\disaster-icons\wind.png" />
+    <Content Include="images\disaster-icons\snow-storm.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\storm.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\thunder-storm.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\tornado.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\war.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\disaster-icons\zombie-attack.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="images\earthquake.jpg" />
     <Content Include="images\flood.jpg" />
     <Content Include="images\heat-wave.jpg" />

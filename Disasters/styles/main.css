@@ -2,6 +2,32 @@
      content: "\E077";
 }
 
+/* MAIN APP */
+.km-on-android .km-header .km-view-title, 
+.km-on-ios .km-header .km-view-title,
+.km-on-wp .km-header .km-view-title
+{
+    color: white;
+    background: #1e5799;
+    font-size: 1.8em;
+}
+
+.km-on-android  .km-header a,
+.km-on-ios .km-header a
+{
+    color: #1e5799;
+    background: white;
+}
+
+.km-on-wp .km-header a
+{
+    color: #1e5799;
+    background: #1e5799;
+    border: 1px solid white;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
 /* MAP STYLES*/
 #map-canvas {
     position: absolute;
@@ -15,7 +41,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 3em;
+    color: white;
+    background:  #1e5799;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     background-image:url(../styles/images/location.png);
     background-repeat:no-repeat;
 }
@@ -25,6 +56,8 @@
     background-repeat:no-repeat;
 }
 
+/* Alert Details View */
+
 #alert-image
 {
     width: 200px;
@@ -33,6 +66,7 @@
     border-radius: 10px;
     margin-bottom:10px;
     margin-left:5px;
+    float: left;
 }
 
 #alert-info-container
@@ -74,8 +108,8 @@ td
     color: white;
     font-weight: bold;
     border-bottom: 2px solid white;
-    border-bottom-left-radius: 1.2em;
-    border-top-right-radius: 1.2em;
+    border-bottom-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
 }
 
 /* HOME VIEW */
@@ -103,4 +137,81 @@ td
     font-size: 1.5em;
     position: relative;
     bottom: 1em;
+}
+
+/* Alerts list */
+
+#alerts-list-view img{
+    float: left;
+    width: 50px;
+    margin-left: 1em;
+}
+
+#alerts-list-view .title-container{
+    margin-left: 4.5em;
+    text-align: center;
+}
+
+/* ADD ALERT*/
+
+#report-alert-view {
+    text-align: right;
+}
+
+#report-alert-view .alert-form{
+    padding-right: 10%;
+}
+
+#report-alert-view .alert-form .form-item{
+    margin-bottom: 1.5em;
+}
+
+#report-alert-view .alert-form .form-item span{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.alert-form #capture-button{
+    border: 1px solid black;
+    background: #1e5799;
+    font-size: 1.2em;
+    color: white;
+}
+
+#your-pics-view{
+    position: relative;
+    height: 100%;
+}
+
+/* Take Picture */
+#take-picture-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background:  #1e5799;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-bottom-left-radius: 1em;
+    background-image:url();
+    background-repeat:no-repeat;
+}
+
+/* Setting */
+.setting-item{
+    text-align: center;
+    margin: 1em 0;
+}
+
+.music-settings button{
+    border: 1px solid black;
+}
+
+/* About */
+#about-view{
+    text-align: center;
+}
+
+#about-view ul{
+    list-style-type: none;
 }

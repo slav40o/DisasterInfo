@@ -2,71 +2,85 @@
     {
         "id": 1,
         "type": "Heat wave",
+        "title": "Massive heats",
         "info": "A period of abnormally and uncomfortably hot and usually humid weather.To be a heat wave such a period should last at least one day, but conventionally it lasts from several days to several weeks. In 1900, A. T. Burrows more rigidly defined a \"hot wave\" as a spell of three or more days on each of which the maximum shade temperature reaches or exceeds 90 F degrees (32.2 C degrees). More realistically, the comfort criteria for any one region are dependent upon the normal conditions of that region.",
         "lat": "55.7",
         "long": "-3.2",
         "area": 500,
         "imagePath": "images/heat-wave.jpg",
+        "iconPath":  "images/disaster-icons/heat.png",
         "isActive" :  true
     },
     {
         "id": 2,
         "type": "Flood",
+        "title": "Floods expected in Varna",
         "info": "A flood is an overflow of water that submerges land which is usually dry. The European Union (EU) Floods Directive defines a flood as a covering by water of land not normally covered by water. In the sense of \"flowing water\", the word may also be applied to the inflow of the tide. Flooding may occur as an overflow of water from water bodies, such as a river or lake, in which the water overtops or breaks levees, resulting in some of that water escaping its usual boundaries, or it may occur due to an accumulation of rainwater on saturated ground in an areal flood. While the size of a lake or other body of water will vary with seasonal changes in precipitation and snow melt, these changes in size are unlikely to be considered significant unless they flood property or drown domestic animals.",
         "lat": "43.2",
         "long": "27.9",
         "area": 50,
         "imagePath": "images/flood.jpg",
+        "iconPath":  "images/disaster-icons/flood.png",
         "isActive" :  true
     },
     {
         "id": 3,
         "type": "Fire",
+        "title": "Forest fire aproaches town",
         "info": "A wildfire is an uncontrolled fire in an area of combustible vegetation that occurs in the countryside or a wilderness area. A wildfire differs from other fires by its extensive size, the speed at which it can spread out from its original source, its potential to change direction unexpectedly, and its ability to jump gaps such as roads, rivers and fire breaks. Wildfires are characterized in terms of the cause of ignition, their physical properties such as speed of propagation, the combustible material present, and the effect of weather on the fire.",
         "lat": "32.4",
         "long": "-116.6",
         "area": 25,
         "imagePath": "images/wildfire.jpg",
+        "iconPath":  "images/disaster-icons/fire.png",
         "isActive" :  true
     },
     {
         "id": 4,
         "type": "Storm",
+        "title": "Enormous and powerfull huricane",
         "info": "A storm is any disturbed state of an environment or astronomical body's atmosphere especially affecting its surface, and strongly implying severe weather. It may be marked by significant disruptions to normal conditions such as strong wind, hail, thunder and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc.",
         "lat": "34.9",
         "long": "133.7",
         "area": 600,
         "imagePath": "images/storm.jpg",
+        "iconPath":  "images/disaster-icons/storm.png",
         "isActive" :  true
     },
     {
         "id": 5,
         "type": "Alien Invasion",
+        "title": "They are here",
         "info": "During the invasion, aliens contacting Earth tend to either observe (sometimes using experiments) or invade, rather than help the population of Earth acquire the capacity to participate in interplanetary affairs. There have been a few exceptions, such as the alien-initiated first contact",
         "lat": "42.5",
         "long": "-73.6",
         "area": 20,
         "imagePath": "images/alien-invasion.jpg",
+        "iconPath":  "images/disaster-icons/alien-invasion.png",
         "isActive" :  true
     },
     {
         "id": 6,
         "type": "Zombie Attack",
+        "title": "New dangerous virus",
         "info": "Invasion of zombies that try to destroy or conquer the planet Earth, transforming all of the people into zombies, who serve them.",
         "lat": "-4.5",
         "long": 143,
         "area": 35,
         "imagePath": "images/zombie-attack.jpg",
+        "iconPath":  "images/disaster-icons/zombie-attack.png",
         "isActive" :  true
     },
 	{
 		"id": 7,
-		"type": "Earthquake",
+        "type": "Earthquake",
+        "title": "7.9 shaked Italy",
 		"info": "Earthquakes, also called temblors, can be so tremendously destructive, it's hard to imagine they occur by the thousands every day around the world, usually in the form of small tremors. Some 80 percent of all the planet's earthquakes occur along the rim of the Pacific Ocean, called the \"Ring of Fire\" because of the preponderance of volcanic activity there as well. Most earthquakes occur at fault zones, where tectonic plates-giant rock slabs that make up the Earth's upper layer-collide or slide against each other.",
 		"lat": "46.04",
 		"long": "10.5",
 		"area": 100,
-		"imagePath": "images/earthquake.jpg",
+        "imagePath": "images/earthquake.jpg",
+        "iconPath":  "images/disaster-icons/earthquake.png",
 		"isActive": true
 	}
 ]

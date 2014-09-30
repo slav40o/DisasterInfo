@@ -1,16 +1,27 @@
 <div data-role="view" 
      data-title="About" 
      data-layout="main" 
-     data-model="window.app.models.about">
+     data-model="window.app.models.about"
+     id="about-view">
 
-    <h1 data-bind="html: title"></h1>
-    <div>Made By Team "Heracles"</div>
-    <ul>
-        <li>
-            Slavi Cvetanov
-        </li>
-        <li>
-            Gabriela Angelova
-        </li>
-    </ul>
+    <div class="info authors-info">
+        <h2>Made By Team "Heracles"</h2>
+        <ul>
+            <li>
+                Slavi Cvetanov
+            </li>
+            <li>
+                Gabriela Angelova
+            </li>
+        </ul>
+    </div>
+    <div class="info">
+        <h2>Application info</h2>
+        <p>
+            Disaster info is hybrid mobile application developed with Cordova.js and Kendo
+            UI Mobile with the help of AppBuilder. The purpose of the app is to show areas
+            around the world that are endangered by some factor(natural disaster, conflicts,
+            bad weather) and are potentially harmful for the human life.
+        </p>
+    </div>
 </div>

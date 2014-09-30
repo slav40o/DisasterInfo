@@ -18,6 +18,11 @@
                 }
             );
 
+            if (navigator.connection.type == 'unknown') {
+                navigator.notification.alert("No interner connection!",
+                                     function () { }, "Network error", 'OK');
+            }
+
             navigator.geolocation.getCurrentPosition(
                 function (position) {
                     var currPos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);

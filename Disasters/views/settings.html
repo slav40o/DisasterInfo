@@ -1,18 +1,21 @@
 <div data-role="view"
-     data-title="Disaster Info"
+     data-title="Settings"
      data-layout="main"
      data-model="window.app.music.model"
      >
-<h1>Settings</h1>
-
-    <button data-role="button"
-      data-click="window.app.music.model.play"
-      id="audio-button">Turn the music ON
-  </button>
-
-    <button data-role="button"
-      data-click="window.app.music.model.stop"
-      id="stop-button">Turn the music OFF
-  </button>
-    
+    <div class="setting-item music-settings">
+        <button data-role="button"
+                data-click="window.app.music.model.play"
+                id="audio-button">
+            Turn the music ON
+        </button>
+        <button data-role="button"
+                data-click="window.app.music.model.stop"
+                id="stop-button">
+            Turn the music OFF
+        </button>
+    </div>
+    <div class="setting-item" >
+        <strong>More comming soon...</strong>
+    </div>
 </div>

@@ -156,26 +156,38 @@
 
     app.mapService = {
         initMap: function () {
-            var mapOptions = {
-                zoom: 11,
-                // minZoom: 6,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                zoomControl: true,
-                zoomControlOptions: {
-                    position: google.maps.ControlPosition.LEFT_BOTTOM
-                },
+            var connection = navigator.connection.type;
+            var availableConnection = connection == 'unknown';
 
-                mapTypeControl: false,
-                streetViewControl: false
-            };
+            if (availableConnection) {
+                    navigator.notification.alert("No interner connection!",
+                                         function () { }, "Network error", 'OK');
 
-            map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-            app.mapService.viewModel.loadMarkers.apply(app.mapService.viewModel, []);
-            app.mapService.viewModel.navigateHome.apply(app.mapService.viewModel, []);
+                // Redirect to home
+            }
+            else {
+                var mapOptions = {
+                    zoom: 11,
+                    // minZoom: 6,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        position: google.maps.ControlPosition.LEFT_BOTTOM
+                    },
 
-            document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
-            document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
+                    mapTypeControl: false,
+                    streetViewControl: false
+                };
 
+                map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                app.mapService.viewModel.loadMarkers.apply(app.mapService.viewModel, []);
+                app.mapService.viewModel.navigateHome.apply(app.mapService.viewModel, []);
+
+                document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
+                document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
+
+            }
+            
             function onVolumeUpKeyDown() {
                 app.mapService.viewModel.zoomMap.apply(app.mapService.viewModel, [1]);
             }

@@ -4,13 +4,13 @@
      data-show="app.alerts.viewModel.showDetails">
 
     <div id="alert-info-container">
-        <h1 class="center" data-bind="text: type"></h1>
+        <h1 class="center" data-bind="text: title"></h1>
         <img data-bind="attr: { src: imagePath }" id="alert-image" />
             <br />
         <table class="alerts-table" >
             <tr>
-                <th>Is active</th>
-                <td data-bind="text: isActive"></td>
+                <th>Type</th>
+                <td data-bind="text: type"></td>
             </tr>
             <tr>
                 <th>Info</th>
